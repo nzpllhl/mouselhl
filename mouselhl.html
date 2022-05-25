@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .box {
+        margin: 0 auto;
+        width: 300px;
+        height: 300px;
+        border: 1px solid pink;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .box1 {
+        width: 300px;
+        height: 300px;
+        background: lightblue;
+        transition: all 0.5s;
+    }
+    
+    .box2 {
+        width: 300px;
+        height: 300px;
+        background: yellow;
+        position: absolute;
+        left: -300px;
+        top: 0;
+        transition: all 0.5s;
+    }
+    
+    .box:hover>.box1 {
+        margin-left: 300px;
+    }
+    
+    .box:hover>.box2 {
+        margin-left: 300px;
+    }
+</style>
+
+<body>
+    <div class="box">
+        <div class="box1">我是海丽盒子</div>
+        <div class="box2">我是小猴子盒子</div>
+    </div>
+</body>
+
+</html>
